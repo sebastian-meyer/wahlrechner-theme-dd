@@ -1,0 +1,44 @@
+:root {
+    --accent-color: rgb(241, 241, 228);
+}
+
+body {
+    background-image: url("Muster_2_Streifen_RGB.jpg"), linear-gradient(to bottom, var(--tw-gradient-stops));
+    background-repeat: repeat-y;
+    background-size: contain;
+    --tw-gradient-from: var(--accent-color);
+    --tw-gradient-to: #e4e4e7;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: rgb(38 38 38);
+    }
+
+    body {
+        background-color: rgb(23 23 23);
+        background-image: none;
+    }
+}
+
+body.these-icon .content {
+    position: relative;
+}
+body.these-icon .content::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-image: var(--these-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
