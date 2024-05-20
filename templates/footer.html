@@ -1,6 +1,48 @@
 {% load wahlrechner_version %}
 {% load wahlrechner_name %}
 
+
+{% load static %}
+
+{# Bilder #}
+<div class="w-full p-3 border-gray-400">
+    <div class="flex w-full max-w-2xl gap-2 mx-auto justify-center items-center flex-wrap">
+
+        <div>
+            <a href="https://dresdenzero.de/">
+                <img src="{% static 'Zero_klein.png' %}" alt="Picture 1" class="w-16 h-16 object-cover">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://zukunftsgestalten.org/start">
+                <img src="{% static 'Zukunft_Gestalten.png' %}" alt="Picture 2" class="w-16 h-16 object-cover">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://la-dresden.de/">
+                <img src="{% static 'lokal_dresden.png' %}" alt="Picture 3" class="w-16 h-16 object-cover">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://sandstorm.de/">
+                <img src="{% static 'sandstorm.svg' %}" alt="Picture 4" class="w-16 h-16 object-cover">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://vorort.bund.net/dresden/?gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v9daXev6zEK70FEcHHElxU1X09S-SiiCTZq2ZulM3JvtbQDV4t9p2waAlyCEALw_wcB">
+                <img src="{% static 'bund_klein.png' %}" alt="Picture 5" class="w-16 h-16 object-cover">
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
 {# Impressum / Datenschutz / GitHub #}
 <div class="w-full p-3 bg-gray-900">
 
